@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="A useful example of a simple accordion written with vanilla JS." />
+
+		<title>Accordion example</title>
+
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<h1 class="accordion-header">Vim mastery</h1>
+		<section class="accordion-container">				
+			<div class="accordion-tab">
+				<div class="accordion-tab-head">
+					<span>Copy (yank)</span>
+				</div>
+				<div class="accordion-tab-body">
+					<ul class="accordion-tab-body-list">
+						<li class="accordion-tab-body-list-item">Copy one line with <span class="code-segment">yy</span></li>	
+						<li class="accordion-tab-body-list-item">Copy two lines with <span class="code-segment">2yy</span></li>
+						<li class="accordion-tab-body-list-item">Copy word under cursor with <span class="code-segment">yw</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="accordion-tab">
+				<div class="accordion-tab-head">
+                                	<span>Paste (put)</span>
+                                </div>
+                                <div class="accordion-tab-body">
+                                        <ul class="accordion-tab-body-list">
+                                                <li class="accordion-tab-body-list-item">Paste with <span class="code-segment">p</span></li>
+                                        </ul>
+                                </div>
+			</div>
+			<div class="accordion-tab">
+			        <div class="accordion-tab-head">
+                                        <span>Delete (cut)</span>
+                                </div>
+                                <div class="accordion-tab-body">
+                                        <ul class="accordion-tab-body-list">
+                                                <li class="accordion-tab-body-list-item">Delete one line with <span class="code-segment">dd</span></li>
+                                                <li class="accordion-tab-body-list-item">Delete two lines with <span class="code-segment">2dd</span></li>
+                                                <li class="accordion-tab-body-list-item">Delete word under cursor with <span class="code-segment">dw</span></li>
+                                        </ul>
+                                </div>
+			</div>
+			<div class="accordion-tab">
+                                <div class="accordion-tab-head">
+                                        <span>Cursor movement</span>
+                                </div>
+                                <div class="accordion-tab-body">
+                                        <ul class="accordion-tab-body-list">
+                                                <li class="accordion-tab-body-list-item">Jump to the start of a line with <span class="code-segment">0</span></li>
+                                                <li class="accordion-tab-body-list-item">Jump to the first character on a line with <span class="code-segment">^</span></li>
+                                                <li class="accordion-tab-body-list-item">Jump to the end of a line with <span class="code-segment">$</span></li>
+                                                <li class="accordion-tab-body-list-item">Jump to the first line of the document with <span class="code-segment">gg</span></li>
+                                                <li class="accordion-tab-body-list-item">Jump to the last line of the document with <span class="code-segment">G</span></li>
+                                        </ul>
+                                </div>
+                        </div> 
+			<div class="accordion-tab">
+				<div class="accordion-tab-head">
+                                	<span>Save (write) & close</span>
+                                </div>
+                                <div class="accordion-tab-body">
+                                        <ul class="accordion-tab-body-list">
+                                                <li class="accordion-tab-body-list-item">Close after making no changes with <span class="code-segment">:q</span></li>
+                                                <li class="accordion-tab-body-list-item">Force close after making changes with <span class="code-segment">:q!</span></li>
+                                                <li class="accordion-tab-body-list-item">Save with <span class="code-segment">:w</span></li>
+                                                <li class="accordion-tab-body-list-item">Save and quit with <span class="code-segment">:wq</span></li>
+                                                <li class="accordion-tab-body-list-item">Save and quit across all tabs with <span class="code-segment">:wqa</span></li>
+                                        </ul>
+                                </div>
+			</div>
+                        <div class="accordion-tab">
+                                <div class="accordion-tab-head">
+                                        <span>Search & replace</span>
+                                </div>
+                                <div class="accordion-tab-body">
+                                        <ul class="accordion-tab-body-list">
+                                                <li class="accordion-tab-body-list-item">Search for pattern with <span class="code-segment">/pattern</span></li>
+                                                <li class="accordion-tab-body-list-item">Replace text with <span class="code-segment">:%s/old/new/g</span></li>
+					</ul>
+                                </div>
+                        </div>
+		</section>		
+	</body>
+</html>
+

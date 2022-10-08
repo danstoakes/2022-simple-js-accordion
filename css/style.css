@@ -1,0 +1,71 @@
+@media only screen and (min-width: 800px) {
+	body {
+		margin: 0em 12em;
+	}
+}
+
+.accordion-header {
+	
+}
+
+.accordion-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.accordion-tab {
+	border-bottom: 1px solid lightgrey;
+}
+
+.accordion-tab:not(:last-child) {
+	margin-bottom: 0.5em;
+} 
+
+.accordion-tab-head {
+        color: grey;
+	cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        font-style: italic;
+       	justify-content: space-between;
+       	padding-bottom: 0.5em;
+}
+
+.accordion-tab-head:after {
+	content: "\f078";
+        font: var(--fa-font-solid);
+}
+
+.accordion-tab-body {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.5s ease-in-out;
+}
+
+.accordion-tab-body ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+		
+.accordion-tab-body ul li {
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.tab-open .accordion-tab-head span {
+	color: black;
+	font-weight: bold;
+}
+
+.tab-open .accordion-tab-head:after {
+        content: "\f077";
+        font: var(--fa-font-solid);
+}
+
+.tab-open .accordion-tab-body {
+	
+}
+
