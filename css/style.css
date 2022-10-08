@@ -4,10 +4,6 @@
 	}
 }
 
-.accordion-header {
-	
-}
-
 .accordion-container {
 	display: flex;
 	flex-direction: column;
@@ -26,6 +22,7 @@
 	cursor: pointer;
         display: flex;
         flex-direction: row;
+	font-size: x-large;
         font-style: italic;
        	justify-content: space-between;
        	padding-bottom: 0.5em;
@@ -64,8 +61,3 @@
         content: "\f077";
         font: var(--fa-font-solid);
 }
-
-.tab-open .accordion-tab-body {
-	
-}
-
